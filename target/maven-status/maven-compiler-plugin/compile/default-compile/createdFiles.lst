@@ -1,0 +1,9 @@
+web/config/Service/CarService.class
+web/controller/CarController.class
+web/controller/HelloController.class
+web/config/WebConfig.class
+web/Model/Car.class
+web/config/Tests$Gen.class
+web/config/AppInit.class
+web/config/Tests.class
+web/config/Te.class

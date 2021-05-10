@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>CarsList</title>
+    <style>
+        table {
+            width: 30%; /* Ширина таблицы */
+            background: aqua; /* Цвет фона таблицы */
+            color: black; /* Цвет текста */
+        }
+        td, th {
+            background: honeydew; /* Цвет фона ячеек */
+            padding: 5px; /* Поля вокруг текста */
+        }
+    </style>
+</head>
+<body>
+<h1>Car list</h1>
+<table border="1" align="center">
+    <tr>
+        <th>model</th>
+        <th>age</th>
+        <th>color</th>
+    </tr>
+    <tr th:each="prod : ${allCars}">
+        <td th:text="${prod.getModel()}"></td>
+        <td th:text="${prod.getAge()}"></td>
+        <td th:text="${prod.getColor()}"></td>
+    </tr>
+</table>
+<a href="/">Say hello</a>
+</body>
+</html>

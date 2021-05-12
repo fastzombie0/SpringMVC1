@@ -1,11 +1,10 @@
-package web.config.Service;
+package web.Service;
 
-import org.springframework.stereotype.Repository;
 import web.Model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
-@Repository
+
 public class CarService {
     public List<Car> getCarList(Integer count) {
         List<Car> carList = new ArrayList<>();
